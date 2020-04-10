@@ -1,0 +1,191 @@
+body{padding:0;margin:0;background-color:#f1f3f6;}
+        @font-face {
+            font-family:a;
+            src: url(Dosis-VF.ttf);
+        }
+        *{
+            font-family:'Titillium Web', sans-serif;
+            
+        }
+        header{
+            background-color:#0e3368;
+            margin: 0px 0px 0px 0px;
+            position: fixed;
+            height:70px;
+            width:100%; 
+            z-index:100;
+        }
+        #d1{
+            background-color:white;
+            color:black;
+            text-align:right;
+        }
+        .a1:hover{
+            background-color:white;
+            color:#0e3368;
+            border-radius:5px 5px 5px 5px;
+            
+        }
+        .a1{
+            padding:3px;
+            text-decoration:none;
+            color:white;
+            border-radius:20px;
+            width:100px;
+            padding:5px 5px 5px 5px;
+            margin-left:5px;
+            font-size:18;
+        }
+        #nav{
+            margin-left:5%;
+            margin-right:10%;
+            padding:10px 10px 10px 10px;
+            margin-top:13px;
+        }
+        .fog{
+            display:inline-block;
+        }
+        #ins{
+            border-radius:7px;
+            padding-left:10px;
+        }
+        #b{
+           float:right;
+           margin-right:2%;
+           margin-top:8px; 
+        }
+        #bt1,#bt2{
+            background:white;
+            border:2px solid white;
+            font-size:18px;
+            cursor:pointer;
+            color:#0e3368;
+            position:relative;
+            border-radius:5px;
+            width:130px;
+            margin-top:11px;
+        } 
+        #bt1::before,#bt1::after,#bt2::before,#bt2::after{
+            content:"";
+            position:absolute;
+            width:10px;
+            height:4px;
+            background:#0e3368;
+            transform: skewX(50deg);
+            transition: .4s linear;
+        }
+        #bt1::before,#bt2::before{
+            top:-4px;
+            left:10%;
+        }
+        #bt1::after,#bt2::after{
+            bottom:-4px;
+            right:10%;
+        }
+        #bt1:hover::before,#bt2:hover::before{
+            left:80%
+        }
+        #bt1:hover::after,#bt2:hover::after{
+            right:80%
+        }
+        #bt1:hover,#bt2:hover{
+            background-color:#ffffff;
+            color:#0085ca;
+        }
+        footer{
+            background-color:#0e3368;
+            color:#ffffff;
+            margin-bottom:0;
+        }
+        section{
+            display:block;
+        }
+        #footer .content {
+            display: flex; 
+        }
+        #footer ul{
+            list-style:none;
+        }
+        footer ul a{
+            text-decoration:none;
+            color:white;
+        }
+        #footer .content section {
+            width: 25%;
+        }
+        #footer .content section:first-child {
+            width: 50%;
+            padding-right: 4rem;
+            padding-left: 2rem; 
+        }
+        #footer .content section:last-child {
+            padding-left: 4rem; 
+        }
+        #footer .copyright {
+            border-top: 1px solid;
+            font-size: 0.8rem;
+            opacity: 0.5;
+            padding: 2rem 0;
+            text-align: center;
+            color:white; 
+        }
+        .text{
+            font-size:  17px;
+            font-weight:900;
+            color:white;
+            position: absolute;
+            margin-top:10px;
+            display:flex;
+        }
+        .h{
+            max-width:0;
+            opacity:0;
+            transition: 0.5s ease-in;
+        }
+        .text:hover .h{
+            opacity:1;
+            max-width:1em;
+        }
+        /*search*/
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top:13px
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #0e3368;
+  border-right: none;
+  padding: 5px;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #0e3368;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #0e3368;
+  background: #0e3368;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  margin-top:5px;
+  margin-right:5%;
+  }

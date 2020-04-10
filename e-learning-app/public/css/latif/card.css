@@ -1,0 +1,272 @@
+#card-select{
+	margin-left:6%;
+	margin-right:6%;
+	padding-left: 2%;
+}
+.cards-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 20 20px 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.card {
+	position: relative;
+}
+
+.card--course {
+	width: 23.5%;
+	max-width: 320px;
+	min-height: 440px;
+	margin: 8px 0 8px;
+	margin-right: 16px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.35);
+	transition: all 0.35s;
+}
+
+.card__cover {
+	height: 160px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.card__content {
+	padding: 16px 24px;
+}
+
+.card-labels {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: nowrap;
+	list-style-type: none;
+	margin: 0 0 12px;
+	padding: 0;
+}
+
+.card-labels:after {
+	content: "";
+	display: block;
+	top: -10px;
+	bottom: -5px;
+	right: 0;
+	width: 42px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 1%, white 100%);
+	position: absolute;
+}
+
+.card__label {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 6px 6px 0;
+	padding: 0 16px;
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+}
+
+.card__label--new {
+	border-color: #f90000;
+	color: #f90000;
+}
+
+.card__label--format_lection {
+	border-color: #838383;
+	color: #838383;
+}
+
+.card__label--collection_sibur {
+	border-color: #4F8485;
+	color: #4F8485;
+}
+
+.card__speakers {
+	list-style-type: none;
+	display: block;
+	margin: 12px 0 0;
+	padding: 0;
+}
+
+.card__speaker {
+	display: block;
+	margin: 0 0 6px;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: normal;
+}
+
+.card__details {
+	margin: 16px 0 12px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 13px;
+	color: #929292;
+}
+
+.card__details--fixed_bottom {
+	margin: 0;
+	position: absolute;
+	left: 24px;
+	right: 24px;
+	bottom: 16px;
+}
+
+.card-controls {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-control {
+	border: none;
+	background-color: transparent;
+	margin: 0 6px 6px 0;
+	padding: 8px 0;
+	text-align: left;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #929292;
+	transition: all .25s ease-in-out;
+}
+
+.card-control:hover, .card-control:active, .card-control:focus {
+	color: #000000;
+}
+
+.card-control[disabled] {
+	opacity: 0.85;
+}
+
+.card-control[disabled]:hover {
+	cursor: not-allowed;
+	color: #929292;
+	opacity: 0.85;
+}
+
+.card-controls--bottom {
+	position: absolute;
+	left: 24px;
+	right: 24px;
+	bottom: 16px;
+}
+
+.card__btn {
+	display: block;
+	max-width: 100%;
+	text-align: center;
+	margin: 12px 0;
+	padding: 0 16px;
+	font-size: 16px;
+	line-height: 2.2;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	opacity: 0.85;
+	transition: all 0.25s ease-in-out;
+}
+
+.card__btn:hover, .card__btn:focus {
+	text-decoration: none;
+	opacity: 1;
+}
+
+.card__btn--default {
+	background-color: #e20e0e;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+.card__btn--default:hover, .card__btn--default:focus {
+	color: #ffffff;
+}
+
+.card__desc {
+	position: relative;
+	height: 230px;
+	overflow: hidden;
+	margin: 0 0 12px;
+	font-size: 14px;
+	line-height: 1.25;
+}
+
+.card__desc:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 24px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 50%, white 100%);
+}
+
+.card__title {
+	position: relative;
+	height: 120px;
+	overflow: hidden;
+	margin: 0 0 12px;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: bold;
+}
+
+.card__title:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 32px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 50%, white 100%);
+}
+
+.card__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 0.55s;
+	opacity: 1;
+}
+
+.card:hover .card__front {
+	opacity: 0;
+}
+
+.card__backward {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 0.55s;
+	opacity: 0;
+}
+
+.card--course:hover {
+	box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.35);
+}
+
+.card:hover .card__backward {
+	opacity: 1;
+}
+
+.card--partner .card__cover {
+	background-size: contain;
+	background-position: center center;
+}
+
+.card--partner_sibur .card__cover {
+	background-color: #4F8485;
+}
